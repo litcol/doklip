@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한글-숫자 암호 변환기</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>한글 ↔ 숫자 암호 변환기</h1>
+        <p class="description">W-K 암호표 (B) 기반 변환기입니다. 한글 또는 숫자를 입력하고 변환 버튼을 누르세요.</p>
+
+        <div class="converter">
+            <div class="textarea-container">
+                <label for="hangul-input">한글</label>
+                <textarea id="hangul-input" rows="8" placeholder="한글을 입력하세요... (예: 안녕하세요)"></textarea>
+            </div>
+            <div class="buttons">
+                <button id="to-number-btn" title="한글을 숫자로 변환">숫자로 &rarr;</button>
+                <button id="to-hangul-btn" title="숫자를 한글로 변환">&larr; 한글로</button>
+            </div>
+            <div class="textarea-container">
+                <label for="number-input">숫자</label>
+                <textarea id="number-input" rows="8" placeholder="숫자를 입력하세요... (예: 172430121833451730)"></textarea>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <p><strong>참고: W-K 암호표 (B)</strong></p>
+            <img src="https://i.imgur.com/8eba30.png" alt="W-K 암호표 (B)" width="600">
+        </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
