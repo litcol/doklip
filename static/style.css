@@ -123,3 +123,9 @@ button:active {
     height: auto;
     border-radius: 8px;
 }
+.description-sub {
+    font-size: 14px; /* 폰트 약간 작게 */
+    color: #6c757d;   /* 색상 약간 연하게 */
+    margin-top: -15px; /* 위쪽 문단과의 간격 줄이기 */
+    margin-bottom: 30px;
+}
